@@ -7,7 +7,8 @@
 
 @font-face {
     font-family: "Pricedown";
-    src: url("D:\aaaaaaaaaaa\pricedown\Pricedown Bl.otf") format("truetype");
+    /* Load from public folder so it works in builds and deployments */
+    src: url("/Pricedown Bl.otf") format("opentype");
     font-weight: 900;
   }
   
