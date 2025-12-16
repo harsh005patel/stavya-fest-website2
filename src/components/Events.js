@@ -123,9 +123,9 @@ export const Events = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-            <span className="text-glow-blue">FEATURED</span>{" "}
-            <span className="text-primary text-glow-pink">EVENTS</span>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
+            <span className="font-pricedown">FEATURED</span>{" "}
+            <span className="text-primary font-pricedown">EVENTS</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             From electrifying performances to intense competitions, explore our diverse range of events.

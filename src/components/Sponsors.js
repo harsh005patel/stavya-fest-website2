@@ -37,9 +37,9 @@ export const Sponsors = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-            <span className="text-secondary text-glow-blue">OUR</span>{' '}
-            <span className="text-primary text-glow-pink">SPONSORS</span>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
+            <span className="text-secondary font-pricedown">OUR</span>{' '}
+            <span className="text-primary font-pricedown">SPONSORS</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Powered by amazing partners who believe in creativity and youth.
@@ -75,7 +75,7 @@ export const Sponsors = () => {
 
         {/* College Info */}
         <div className="text-center max-w-3xl mx-auto">
-          <h3 className="text-3xl font-bold mb-4 text-accent text-glow-purple">About The College</h3>
+          <h3 className="text-3xl font-bold mb-4 text-accent font-pricedown">About The College</h3>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             STAVYA is organized by the students of [College Name], a premier institution dedicated to
             fostering creativity, innovation, and excellence. Our fest brings together talented individuals
@@ -83,15 +83,15 @@ export const Sponsors = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-8 mt-8">
             <div>
-              <div className="text-2xl font-bold text-secondary text-glow-blue">20+</div>
+              <div className="text-2xl font-bold text-secondary font-pricedown">20+</div>
               <div className="text-sm text-muted-foreground">Years of Excellence</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-primary text-glow-pink">10,000+</div>
+              <div className="text-2xl font-bold text-primary font-pricedown">10,000+</div>
               <div className="text-sm text-muted-foreground">Students</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-accent text-glow-purple">50+</div>
+              <div className="text-2xl font-bold text-accent font-pricedown">50+</div>
               <div className="text-sm text-muted-foreground">Clubs & Societies</div>
             </div>
           </div>

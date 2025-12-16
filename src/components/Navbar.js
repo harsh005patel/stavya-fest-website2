@@ -21,7 +21,7 @@ export const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Events', href: '/events' },
     { name: 'Schedule', href: '#schedule' },
-    { name: 'Gallery', href: '#gallery' },
+    { name: 'Contact Us', href: '/contact' },
   ];
 
   const scrollToSection = (href) => {
@@ -47,7 +47,7 @@ export const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="text-4xl font-black tracking-wide">
-            <span className="text-glow-pink">STAVYA</span>
+            <span className="font-pricedown">STAVYA</span>
             <span className="text-base text-secondary ml-2">2025</span>
           </Link>
 

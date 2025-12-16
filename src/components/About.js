@@ -86,9 +86,9 @@ export const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-            <span className="text-glow-pink">ABOUT</span>{' '}
-            <span className="text-secondary text-glow-blue">STAVYA</span>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
+            <span className="font-pricedown">ABOUT</span>{' '}
+            <span className="text-secondary font-pricedown">STAVYA</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             A three-day cultural extravaganza bringing together the best talent from across the region.
@@ -126,22 +126,14 @@ export const About = () => {
                   {/* Label */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                     <div
-                      className={`text-4xl md:text-5xl font-bold text-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 text-glow-${image.color === 'primary' ? 'pink' : image.color === 'secondary' ? 'blue' : 'purple'}`}
+                      className="text-4xl font-pricedown md:text-5xl font-bold text-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"
                       style={{
                         transform: 'rotate(-5deg)',
                       }}
                     >
                       {image.label}
                     </div>
-                    <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Icon className={`text-${image.color}`} size={24} />
-                        <span className={`text-lg font-bold text-${image.color}`}>{image.category}</span>
-                      </div>
-                      <p className="text-sm text-foreground/90 text-center max-w-xs">
-                        {image.description}
-                      </p>
-                    </div>
+                   
                   </div>
 
                   {/* Border Glow on Hover */}
@@ -161,7 +153,7 @@ export const About = () => {
             { number: '₹10L+', label: 'Prize Money' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary text-glow-pink mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2 font-pricedown">
                 {stat.number}
               </div>
               <div className="text-muted-foreground text-lg">{stat.label}</div>

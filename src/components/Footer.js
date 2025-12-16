@@ -38,7 +38,7 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-4xl font-bold mb-4">
-              <span className="text-glow-pink">STAVYA</span>
+              <span className="font-pricedown">STAVYA</span>
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Unleash the Chaos of Creativity. Join us for three days of unforgettable performances,
@@ -62,7 +62,7 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-bold mb-4 text-secondary text-glow-blue">Quick Links</h4>
+            <h4 className="text-xl font-bold mb-4 text-secondary font-pricedown">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -79,7 +79,7 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-bold mb-4 text-accent text-glow-purple">Contact Us</h4>
+            <h4 className="text-xl font-bold mb-4 text-accent font-pricedown">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="text-primary mt-1 flex-shrink-0" size={18} />
@@ -98,7 +98,7 @@ export const Footer = () => {
 
           {/* CTA */}
           <div>
-            <h4 className="text-xl font-bold mb-4 text-primary text-glow-pink">Join Us</h4>
+            <h4 className="text-xl font-bold mb-4 text-primary font-pricedown">Join Us</h4>
             <p className="text-muted-foreground mb-4">
               Don't miss out on the biggest cultural fest of the year!
             </p>

@@ -73,18 +73,18 @@ export const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none">
-            <span className="text-glow-pink glitch-text inline-block">Stavya</span>
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none font-pricedown">
+            <span className="glitch-text inline-block font-pricedown">Stavya</span>
           </h1>
 
-          <div className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-wider">
-            <span className="text-secondary text-glow-blue">2025</span>
+          <div className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-wider font-pricedown">
+            <span className="text-secondary font-pricedown">2025</span>
           </div>
 
           {/* Tagline */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-4 max-w-3xl mx-auto font-medium">
-            Unleash the <span className="text-accent text-glow-purple">Chaos</span> of{' '}
-            <span className="text-primary text-glow-pink">Creativity</span>
+          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-4 max-w-3xl mx-auto font-medium font-pricedown">
+            Unleash the <span className="text-accent font-pricedown">Chaos</span> of{' '}
+            <span className="text-primary font-pricedown">Creativity</span>
           </p>
         </div>
       </div>

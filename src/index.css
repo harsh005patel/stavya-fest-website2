@@ -139,29 +139,11 @@ code {
     .glow-purple {
         box-shadow: var(--shadow-neon-purple);
     }
-    
-    h1 .text-glow-pink,
-    .text-glow-pink {
-        font-family: "Pricedown", sans-serif !important;  /* Add !important to override h1 */
-        text-shadow: 0 0 10px hsl(var(--primary) / 0.8),
-                     0 0 20px hsl(var(--primary) / 0.6),
-                     0 0 30px hsl(var(--primary) / 0.4);
-    }
-    
-    .text-glow-blue {
-        font-family: "Pricedown", sans-serif !important;  /* Add !important here too for consistency */
 
-        text-shadow: 0 0 10px hsl(var(--secondary) / 0.8),
-                     0 0 20px hsl(var(--secondary) / 0.6),
-                     0 0 30px hsl(var(--secondary) / 0.4);
-    }
-    
-    .text-glow-purple {
-        font-family: "Pricedown", sans-serif !important;  /* Add !important here too for consistency */
-
-        text-shadow: 0 0 10px hsl(var(--accent) / 0.8),
-                     0 0 20px hsl(var(--accent) / 0.6),
-                     0 0 30px hsl(var(--accent) / 0.4);
+    /* Pricedown font helper (no glow) */
+    .font-pricedown {
+        font-family: "Pricedown", sans-serif;
+        letter-spacing: 0.05em;
     }
     
     .border-glow-pink {

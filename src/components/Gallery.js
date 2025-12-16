@@ -67,9 +67,9 @@ export const Gallery = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-            <span className="text-primary text-glow-pink">FEST</span>{' '}
-            <span className="text-accent text-glow-purple">VIBES</span>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
+            <span className="text-primary font-pricedown">FEST</span>{' '}
+            <span className="text-accent font-pricedown">VIBES</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Relive the electric moments from previous editions of STAVYA.
@@ -105,7 +105,7 @@ export const Gallery = () => {
                   {/* Label */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div
-                      className={`text-4xl md:text-5xl font-bold text-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 text-glow-${image.color === 'primary' ? 'pink' : image.color === 'secondary' ? 'blue' : 'purple'}`}
+                      className="text-4xl md:text-5xl font-bold text-foreground opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 font-pricedown"
                       style={{
                         transform: 'rotate(-5deg)',
                       }}
