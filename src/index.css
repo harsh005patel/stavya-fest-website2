@@ -5,15 +5,6 @@
 @tailwind utilities;
 
 
-@font-face {
-    font-family: "Pricedown";
-    /* Load from public folder so it works in builds and deployments */
-    src: url("/Pricedown Bl.otf") format("opentype");
-    font-weight: 900;
-  }
-  
-
-  
 body {
     margin: 0;
     font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
