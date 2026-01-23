@@ -64,22 +64,17 @@ export const Hero = () => {
           }`}
         >
           {/* Logo */}
-          <div className="mt-16 sm:mt-24 md:mt-32 lg:mt-40 flex justify-center">
-            <img
-              src="/logo.svg"
-              alt="STAVYA Festival Logo"
-              className="h-28 sm:h-36 md:h-44 lg:h-52 xl:h-64 w-auto logo-glow-multi"
-            />
+          <div className="mt-6 sm:mt-10 md:mt-14 flex justify-center">
+
+          <img
+  src="/logo.svg"
+  alt="STAVYA Festival Logo"
+  className="h-36 sm:h-44 md:h-56 lg:h-72 xl:h-96 w-auto logo-glow-multi"
+/>
+
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none font-pricedown">
-            <span className="glitch-text inline-block font-pricedown">Stavya</span>
-          </h1>
-
-          <div className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-wider font-pricedown">
-            <span className="text-secondary font-pricedown">2025</span>
-          </div>
+         
 
           {/* Tagline */}
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-4 max-w-3xl mx-auto font-medium font-pricedown">
