@@ -37,7 +37,7 @@ const coreTeam = [
   { name: "Sajjala Anshu Reddy", title: "Member", image: ["/contact_us/anshu.png", "/contact_us/anshu.jpg"], insta: "anshu_reddyy19", linkedin: "linkedin.com/anshu-reddy" },
   { name: "Kavya Siddh Sharma", title: "Member", image: ["/contact_us/kavya.jpg"], insta: "kavya._.1806", linkedin: "in.linkedin.com/in/kavya-siddh-sharma-714228318" },
   { name: "Anurag", title: "Member", image: ["/contact_us/anurag.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/anurag-daf-ad14" },
-  { name: "Abhi Virani", title: "Member", image: ["/contact_us/abhi.heic", "/contact_us/abhi.png"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
+  { name: "Abhi Virani", title: "Member", image: ["/contact_us/abhi.heic", "/contact_us/abhi.jpg"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
   { name: "Anushka Wagh", title: "Member", image: ["/contact_us/anushka.jpg"], insta: "anushka_wagh_03", linkedin: "www.linkedin.com/in/anushka-wagh-0b0a7932b" },
   { name: "Ashitosh Shirsath", title: "Member", image: ["/contact_us/ashitosh.jpg"], insta: "ashitosh_0302", linkedin: null },
   { name: "Lingampeta Daksha", title: "Member", image: ["/contact_us/daksha.jpg", "/contact_us/daksha.jpeg"], insta: "daksha_goud.16", linkedin: "www.linkedin.com/in/lingampeta-daksha-548188330" },
@@ -153,5 +153,6 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
+
 
 
