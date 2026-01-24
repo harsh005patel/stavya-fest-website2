@@ -28,6 +28,7 @@ const resolveLinkedIn = (link) => {
 /* 🔹 CORE TEAM */
 const coreTeam = [
   { name: "Rishi Menpara", title: "Member", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: null },
+  { name: "Dev Patel", title: "Member", image: ["/contact_us/dev.jpg"], insta: "devunderscore23", linkedin: "https://www.linkedin.com/in/dev-patel-96b2a9217/" },
   { name: "Chinmay Patil", title: "Member", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.png"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
   { name: "Devraj Singh", title: "Member", image: ["/contact_us/devraj.jpg"], insta: "devraj._.x", linkedin: "www.linkedin.com/in/devrajsingh25" },
   { name: "Yug Baid", title: "Member", image: ["/contact_us/yug.jpg"], insta: "yug__jaiin__", linkedin: null },
@@ -152,3 +153,4 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
+
