@@ -55,7 +55,7 @@ const coordinators = [
   { name: "Ankit Mishra", title: "Secretary", image: ["/contact_us/ankit.png"], insta: "ankitmishra1597", linkedin: "www.linkedin.com/in/ankit-mishra-189b38277" },
   { name: "Poojan Simariya", title: "Secretary", image: ["/contact_us/poojan.jpg"], insta: "poojansimariya", linkedin: "www.linkedin.com/in/poojan-simariya-ps5344" },
   { name: "Rudraksha Singh", title: "Joint Secretary", image: ["/contact_us/rudraksha.jpeg", "/contact_us/rudraksha.jpg"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
-  { name: "Saumya Joshi", title: "Secretary", image: ["/contact_us/saumya.jpeg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
+  { name: "Saumya Joshi", title: "Secretary", image: ["/contact_us/saumya.jpg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Chirag Wattamwar", title: "Joint Secretary", image: ["/contact_us/chirag.jpg"], insta: "chirag_gg234", linkedin: "www.linkedin.com/in/chirag-wattamwar-5b985a313" },
   { name: "Shailendra Singh Mandal", title: "Secretary", image: ["/contact_us/shailendra.jpeg"], insta: "shailendra_.x", linkedin: "www.linkedin.com/in/shailendrasinghmandal" },
@@ -153,6 +153,7 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
+
 
 
 
