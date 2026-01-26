@@ -88,11 +88,10 @@ export const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
             <span className="font-pricedown">ABOUT</span>{' '}
-            <span className="text-secondary font-pricedown">STAVYA</span>
+            <span className="text-secondary font-pricedown">COLLEGE</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A three-day cultural extravaganza bringing together the best talent from across the region.
-            Experience the perfect blend of art, music, dance, drama, gaming, and creativity in one epic celebration.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Indian Institute of Information Technology Vadodara – International Campus Diu is a centrally funded technical institute under the Ministry of Education, Government of India. It focuses on high-quality education and research in Information Technology, offering programs like B.Tech and Ph.D., with strong emphasis on innovation, industry exposure, and practical learning.
           </p>
         </div>
 
@@ -144,22 +143,21 @@ export const About = () => {
           })}
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
-          {[
-            { number: '50+', label: 'Events' },
-            { number: '5000+', label: 'Participants' },
-            { number: '100+', label: 'Colleges' },
-            { number: '₹10L+', label: 'Prize Money' },
-          ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2 font-pricedown">
-                {stat.number}
-              </div>
-              <div className="text-muted-foreground text-lg">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+       {/* Stats */}
+<div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20">
+  {[
+    { number: '50+', label: 'Events' },
+    { number: '500+', label: 'Participants' },
+    { number: '₹40K+', label: 'Prize Money' },
+  ].map((stat, index) => (
+    <div key={index} className="text-center">
+      <div className="text-4xl md:text-5xl font-bold text-primary mb-2 font-pricedown">
+        {stat.number}
+      </div>
+      <div className="text-muted-foreground text-lg">{stat.label}</div>
+    </div>
+  ))}
+</div>
       </div>
 
       {/* Background Decoration */}

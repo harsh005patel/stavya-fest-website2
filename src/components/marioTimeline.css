@@ -11,15 +11,15 @@
   padding-bottom: 60px;
   color: #fff;
   text-align: center;
-  background: #7c3aed;
+  background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 50%, #8b5cf6 100%);
 }
 
 .mario-timeline-section {
-  /* Contact page palette:
-     Purple: #7c3aed
+  /* Softer theme palette:
+     Purple: #7c3aed (softer: #6d28d9, #8b5cf6)
      Muted Yellow: #e5c07b
-     Cyan: #22d3ee
-     Pink: #ec4899
+     Cyan: #00b6d2 (softer: #0891b2, #0e7490)
+     Pink: #ec4899 (softer: #db2777, #be185d)
   */
   width: 100vw;
   position: relative;
@@ -29,11 +29,11 @@
   margin-right: -50vw;
   padding: 00px 0;
   background:
-    radial-gradient(farthest-side at top right, #7c3aed 98%, #0000)
+    radial-gradient(farthest-side at top right, rgba(124, 58, 237, 0.3) 98%, #0000)
       calc(50% - 10px) 0/35px 0px no-repeat,
-    radial-gradient(farthest-side at bottom right, #7c3aed 98%, #0000)
+    radial-gradient(farthest-side at bottom right, rgba(124, 58, 237, 0.3) 98%, #0000)
       calc(50% - 10px) 100%/35px 0px no-repeat,
-    linear-gradient(90deg, #e5c07b 50%, #22d3ee 0);
+    linear-gradient(90deg, rgba(8, 145, 178, 0.15) 50%, rgba(8, 145, 178, 0.15) 0);
 }
 
 .mario-timeline-title,
@@ -55,7 +55,7 @@
   grid-column: span 2;
   text-align: center;
   border-radius: 65px;
-  color: #000000;
+  color: #a5f3fc;
   font-weight: 800;
   font-size: 22px;
   line-height: 1.3em;
@@ -63,19 +63,19 @@
   position: relative;
   padding: 20px;
   border: 20px solid #0000;
-  --c: #e5c07b; /* padding box color */
+  --c: #0891b2; /* softer cyan padding box color */
   --d: 90deg; /* border gradient angle */
   background:
-    linear-gradient(#ec4899 0 0) content-box, /* main pill color */
+    linear-gradient(#0f172a 0 0) content-box, /* softer dark main pill color */
     linear-gradient(var(--c) 0 0) padding-box,
-    linear-gradient(var(--d), #0000 75%, #7c3aed 0%) border-box; /* accent */
+    linear-gradient(var(--d), #0000 75%, #1e293b 0%) border-box; /* softer accent */
 }
 
 .timeline li:nth-child(even) {
   grid-column-end: -1;
   --d: -90deg;
-  --c: #22d3ee;
-  color: #000;
+  --c: #7c3aed; /* purple for even items */
+  color: #c4b5fd; /* softer purple text */
 }
 
 .timeline li:not(:last-child) {
@@ -96,13 +96,13 @@
   top: 50%;
   transform: translateY(-50%);
   white-space: nowrap;
-  color: #000000;
+  color: #e5c07b; /* muted yellow for time */
 }
 
 .timeline li:nth-child(even) time {
   left: auto;
   right: calc(100% + 50px);
-  color: #000;
+  color: #e5c07b; /* muted yellow for time */
 }
 
 .timeline time:before {
@@ -112,14 +112,14 @@
   top: calc(50% - 5px);
   right: calc(100% + 5px);
   width: 65px;
-  background: repeating-linear-gradient(-90deg, #e5c07b 0 5px, #0000 0 10px)
+  background: repeating-linear-gradient(-90deg, #7c3aed 0 5px, #0000 0 10px)
     50%/100% 2px no-repeat;
 }
 
 .timeline li:nth-child(even) time:before {
   right: auto;
   left: calc(100% + 5px);
-  background: repeating-linear-gradient(90deg, #22d3ee 0 5px, #0000 0 10px)
+  background: repeating-linear-gradient(90deg, #7c3aed 0 5px, #0000 0 10px)
     50%/100% 2px no-repeat;
 }
 
@@ -231,42 +231,44 @@
     padding-right: 16px;
   }
 }
-
 @media (max-width: 900px) {
   .mario-timeline-section {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* Keep a continuous purple "spine" on mobile */
-  
-  .timeline li{
+  /* Same color theme as desktop (no pink) */
+  .timeline li {
     background:
-    linear-gradient(#ec4899 0 0) content-box, /* main pill color */
-    linear-gradient(var(--c) 0 0) padding-box,
-    linear-gradient(var(--d), #0000 50%, #7c3aed 0%) border-box; /* accent */
+      linear-gradient(#0f172a 0 0) content-box, /* dark slate main pill */
+      linear-gradient(var(--c) 0 0) padding-box,
+      linear-gradient(var(--d), #0000 50%, #1e293b 0%) border-box; /* purple spine */
+    color: #a5f3fc; /* cyan text */
   }
+
   .timeline {
     grid-template-columns: 1fr;
     justify-content: stretch;
   }
+
   .timeline li,
   .timeline li:nth-child(even) {
     grid-column: auto;
     grid-column-end: auto;
     border-radius: 62px;
   }
+
   .timeline time,
   .timeline li:nth-child(even) time {
     position: static;
     transform: none;
     display: block;
     margin-bottom: 10px;
-    color: inherit;
+    color: #e5c07b; /* muted yellow */
   }
+
   .timeline time:before,
   .timeline li:nth-child(even) time:before {
     display: none;
   }
 }
-

@@ -12,7 +12,7 @@ const events = [
     time: "9:00 PM",
     date: "31/01/2026",
     prizePool: "₹ 5,700",
-    regDeadline: "31 JAN",
+    regDeadline: "30 JAN",
     image: "/cards/1.png",
     dancer: "/card_elements/1.png",
     registrationLink: "https://example.com/register/nrityakala",
@@ -28,7 +28,7 @@ const events = [
     time: "2:00 PM",
     date: "31/01/2026",
     prizePool: "₹ 5,400",
-    regDeadline: "31 JAN",
+    regDeadline: "30 JAN",
     image: "/cards/12.png",
     dancer: "/card_elements/12.png",
     registrationLink: "https://example.com/register/rangoli-clash",
@@ -45,7 +45,7 @@ const events = [
     time: "8:00 PM",
     date: "01/02/2026",
     prizePool: "₹ 5,700",
-    regDeadline: "01 FEB",
+    regDeadline: "30 JAN",
     image: "/cards/11.png",
     dancer: "/card_elements/11.png",
     registrationLink: "https://example.com/register/urban-harmony",
@@ -62,7 +62,7 @@ const events = [
     time: "10:00 AM",
     date: "01/02/2026",
     prizePool: "₹ 5,600",
-    regDeadline: "01 FEB",
+    regDeadline: "30 JAN",
     image: "/cards/9.png",
     dancer: "/card_elements/8.png",
     registrationLink: "https://example.com/register/confero",
@@ -78,7 +78,7 @@ const events = [
     time: "5:30 PM",
     date: "01/02/2026",
     prizePool: "₹ 8,400",
-    regDeadline: "01 FEB",
+    regDeadline: "30 JAN",
     image: "/cards/3.png",
     dancer: "/card_elements/3.png",
     registrationLink: "https://example.com/register/shabd-sangam",
@@ -94,7 +94,7 @@ const events = [
     time: "8:30 AM",
     date: "31/01/2026",
     prizePool: "TBD",
-    regDeadline: "31 JAN",
+    regDeadline: "30 JAN",
     image: "/cards/13.png",
     dancer: "/card_elements/13.png",
     registrationLink: "https://example.com/register/squid-showdown",
@@ -110,7 +110,7 @@ const events = [
     time: "31st Jan - 1st Feb",
     date: "31/01/2026",
     prizePool: "₹ 3,000",
-    regDeadline: "31 JAN",
+    regDeadline: "2 FEB",
     image: "/cards/5.png",
     dancer: "/card_elements/5.png",
     registrationLink: "https://example.com/register/urban-lens",
@@ -126,7 +126,7 @@ const events = [
     time: "10:30 AM",
     date: "31/01/2026",
     prizePool: "₹ 5,700",
-    regDeadline: "31 JAN",
+    regDeadline: "30 JAN",
     image: "/cards/7.png",
     dancer: "/card_elements/7.png",
     registrationLink: "https://example.com/register/emotions-unplugged",
@@ -189,7 +189,7 @@ export const EventsPage = () => {
         ref={sectionRef}
         className="w-full mt-16 md:mt-18 mb-20 px-0 sm:px-4 md:px-8 flex flex-col items-center bg-fixed bg-no-repeat bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/ROAD.jpg")'
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/ROAD2.jpg")'
         }}
         
       >
@@ -307,15 +307,7 @@ export const EventsPage = () => {
 
         {/* --- MOBILE / IPAD VIEW --- */}
         <div className="md:hidden w-full px-4 pt-10 pb-20 max-w-md mx-auto space-y-8">
-          {/* TITLE */}
-          <div className="text-center space-y-2">
-            <h1
-              className="text-6xl uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500"
-              style={{ fontFamily: '"Pricedown", sans-serif' }}
-            >
-              Flagship
-            </h1>
-          </div>
+         
 
           {/* EVENT CARDS */}
           {events.map((event, index) => (

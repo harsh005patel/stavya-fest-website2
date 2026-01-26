@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Events from './components/Events';
 import Schedule from './components/Schedule';
 import Gallery from './components/Gallery';
-import Sponsors from './components/Sponsors';
+import OrganizingClubs from './components/OrganizingClubs';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import EventsPage from './pages/EventsPage';
 import ContactPage from './pages/ContactPage';
+
+// ScrollToTop component to scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,7 +56,7 @@ function HomePage() {
       <About />
       <Schedule />
       {/* <Gallery /> */}
-      <Sponsors />
+      <OrganizingClubs />
       <Footer />
     </div>
   );
@@ -54,6 +65,7 @@ function HomePage() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />

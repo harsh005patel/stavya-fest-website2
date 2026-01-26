@@ -40,39 +40,18 @@ export const Schedule = () => {
       day: 'Day 1',
       date: 'March 15, 2025',
       events: [
-        { time: '10:00 AM', title: 'Inauguration Ceremony', location: 'Main Stage', color: 'primary' },
-        { time: '11:00 AM', title: 'Photography Contest', location: 'Campus Grounds', color: 'secondary' },
-        { time: '2:00 PM', title: 'Treasure Hunt', location: 'Entire Campus', color: 'accent' },
-        { time: '4:00 PM', title: 'Dance Face-Off', location: 'Auditorium', color: 'secondary' },
-        { time: '6:00 PM', title: 'Battle of Bands', location: 'Main Stage', color: 'primary' },
-        { time: '9:00 PM', title: 'DJ Night', location: 'Open Arena', color: 'accent' },
+        { time: '31 Jan 10:00 AM', title: 'Squid Showdown', location: 'IIITV-ICD premises' },
+        { time: '31 Jan 5:30 PM', title: 'Stavya Inauguration', location: 'Event Ground' },
+        { time: '31 Jan 6:30 PM', title: 'Emotions Unplugged', location: 'Event Ground' },
+        { time: '31 Jan 8:00 PM', title: 'Nrityakala', location: 'Event Ground' },
+        { time: '1 Feb 10:00 AM', title: 'Confero', location: 'Event Ground' },
+        { time: '1 Feb 2:00 PM', title: 'Rangoli Clash', location: 'Event Ground' },
+        { time: '1 Feb 5:30 PM', title: 'ShabdSangam', location: 'Event Ground' },
+        { time: '1 Feb 6:30 PM', title: 'Urban Harmony', location: 'Event Ground' },
       ],
     },
-    {
-      day: 'Day 2',
-      date: 'March 16, 2025',
-      events: [
-        { time: '10:00 AM', title: 'E-Sports Tournament', location: 'Gaming Zone', color: 'primary' },
-        { time: '11:00 AM', title: 'Art Exhibition', location: 'Art Gallery', color: 'secondary' },
-        { time: '2:00 PM', title: 'Debate Competition', location: 'Seminar Hall', color: 'accent' },
-        { time: '4:00 PM', title: 'Fashion Prelims', location: 'Indoor Stadium', color: 'primary' },
-        { time: '7:00 PM', title: 'Stage Play', location: 'Auditorium', color: 'accent' },
-        { time: '9:00 PM', title: 'Rock Night', location: 'Main Stage', color: 'secondary' },
-      ],
-    },
-    {
-      day: 'Day 3',
-      date: 'March 17, 2025',
-      events: [
-        { time: '10:00 AM', title: 'Literary Events', location: 'Library Lawn', color: 'secondary' },
-        { time: '12:00 PM', title: 'Street Play', location: 'Campus Streets', color: 'accent' },
-        { time: '3:00 PM', title: 'Quiz Competition', location: 'Seminar Hall', color: 'primary' },
-        { time: '6:00 PM', title: 'Fashion Show Finals', location: 'Main Stage', color: 'secondary' },
-        { time: '8:00 PM', title: 'Celebrity Night', location: 'Main Stage', color: 'primary' },
-        { time: '9:00 PM', title: 'Stand-Up Comedy', location: 'Auditorium', color: 'accent' },
-        { time: '10:30 PM', title: 'Closing Ceremony', location: 'Main Stage', color: 'primary' },
-      ],
-    },
+   
+    
   ];
 
   return (

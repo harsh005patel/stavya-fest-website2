@@ -1,25 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '#about' },
-    { name: 'Events', href: '/events' },
-    { name: 'Schedule', href: '#schedule' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: 'Home', href: '/', type: 'route' },
+    { name: 'About', href: '#about', type: 'section' },
+    { name: 'Events', href: '/events', type: 'route' },
+    { name: 'Schedule', href: '#schedule', type: 'section' },
+    { name: 'Contact Us', href: '/contact', type: 'route' },
   ];
 
   const scrollToSection = (href) => {
@@ -33,33 +24,26 @@ export const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/50 backdrop-blur-lg border-b border-primary/20'
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className="fixed top-0 w-full z-50 bg-background/50 backdrop-blur-lg border-b border-primary/20 transition-all duration-300">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <a 
-            href="/" 
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = '/';
-            }}
-            className="text-4xl font-black tracking-wide cursor-pointer"
+          <Link 
+            to="/"
+            className="flex items-center cursor-pointer"
           >
-            <span className="font-pricedown">STAVYA</span>
-            <span className="text-base text-secondary ml-2">2025</span>
-          </a>
+            <img 
+              src="/logo.svg" 
+              alt="STAVYA Logo" 
+              className="h-10 md:h-12 w-auto"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
-              link.href.startsWith('#') ? (
+              link.type === 'section' ? (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
@@ -67,18 +51,6 @@ export const Navbar = () => {
                 >
                   {link.name}
                 </button>
-              ) : link.href === '/' ? (
-                <a
-                  key={link.name}
-                  href="/"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/';
-                  }}
-                  className="text-lg font-semibold text-foreground hover:text-primary transition-all font-pricedown"
-                >
-                  {link.name}
-                </a>
               ) : (
                 <Link
                   key={link.name}
@@ -104,7 +76,7 @@ export const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in-up">
             {navLinks.map((link) => (
-              link.href.startsWith('#') ? (
+              link.type === 'section' ? (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
@@ -112,18 +84,6 @@ export const Navbar = () => {
                 >
                   {link.name}
                 </button>
-              ) : link.href === '/' ? (
-                <a
-                  key={link.name}
-                  href="/"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/';
-                  }}
-                  className="block w-full text-left text-foreground hover:text-primary transition-colors py-2 text-2xl font-bold font-pricedown"
-                >
-                  {link.name}
-                </a>
               ) : (
                 <Link
                   key={link.name}
