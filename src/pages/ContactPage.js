@@ -27,7 +27,8 @@ const resolveLinkedIn = (link) => {
 
 /* 🔹 CORE TEAM */
 const coreTeam = [
-  { name: "Rishi Menpara", title: "Member", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: null },
+  { name: "Rishi Menpara", title: "Member", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: "https://www.linkedin.com/in/rishi-menpara-8b1060312/" },
+  { name: "Dev Patel", title: "Member", image: ["/contact_us/dev.jpg"], insta: "devunderscore23", linkedin: "https://www.linkedin.com/in/dev-patel-96b2a9217/" },
   { name: "Chinmay Patil", title: "Member", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.png"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
   { name: "Devraj Singh", title: "Member", image: ["/contact_us/devraj.jpg"], insta: "devraj._.x", linkedin: "www.linkedin.com/in/devrajsingh25" },
   { name: "Yug Baid", title: "Member", image: ["/contact_us/yug.jpg"], insta: "yug__jaiin__", linkedin: null },
@@ -36,7 +37,7 @@ const coreTeam = [
   { name: "Sajjala Anshu Reddy", title: "Member", image: ["/contact_us/anshu.png", "/contact_us/anshu.jpg"], insta: "anshu_reddyy19", linkedin: "linkedin.com/anshu-reddy" },
   { name: "Kavya Siddh Sharma", title: "Member", image: ["/contact_us/kavya.jpg"], insta: "kavya._.1806", linkedin: "in.linkedin.com/in/kavya-siddh-sharma-714228318" },
   { name: "Anurag", title: "Member", image: ["/contact_us/anurag.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/anurag-daf-ad14" },
-  { name: "Abhi Virani", title: "Member", image: ["/contact_us/abhi.heic", "/contact_us/abhi.png"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
+  { name: "Abhi Virani", title: "Member", image: ["/contact_us/abhi.heic", "/contact_us/abhi.jpg"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
   { name: "Anushka Wagh", title: "Member", image: ["/contact_us/anushka.jpg"], insta: "anushka_wagh_03", linkedin: "www.linkedin.com/in/anushka-wagh-0b0a7932b" },
   { name: "Ashitosh Shirsath", title: "Member", image: ["/contact_us/ashitosh.jpg"], insta: "ashitosh_0302", linkedin: null },
   { name: "Lingampeta Daksha", title: "Member", image: ["/contact_us/daksha.jpg", "/contact_us/daksha.jpeg"], insta: "daksha_goud.16", linkedin: "www.linkedin.com/in/lingampeta-daksha-548188330" },
@@ -54,7 +55,7 @@ const coordinators = [
   { name: "Ankit Mishra", title: "Secretary", image: ["/contact_us/ankit.png"], insta: "ankitmishra1597", linkedin: "www.linkedin.com/in/ankit-mishra-189b38277" },
   { name: "Poojan Simariya", title: "Secretary", image: ["/contact_us/poojan.jpg"], insta: "poojansimariya", linkedin: "www.linkedin.com/in/poojan-simariya-ps5344" },
   { name: "Rudraksha Singh", title: "Joint Secretary", image: ["/contact_us/rudraksha.jpeg", "/contact_us/rudraksha.jpg"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
-  { name: "Saumya Joshi", title: "Secretary", image: ["/contact_us/saumya.jpeg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
+  { name: "Saumya Joshi", title: "Secretary", image: ["/contact_us/saumya.jpg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Chirag Wattamwar", title: "Joint Secretary", image: ["/contact_us/chirag.jpg"], insta: "chirag_gg234", linkedin: "www.linkedin.com/in/chirag-wattamwar-5b985a313" },
   { name: "Shailendra Singh Mandal", title: "Secretary", image: ["/contact_us/shailendra.jpeg"], insta: "shailendra_.x", linkedin: "www.linkedin.com/in/shailendrasinghmandal" },
@@ -152,3 +153,7 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
+
+
+
+

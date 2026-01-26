@@ -53,7 +53,7 @@ export const Navbar = () => {
             className="text-4xl font-black tracking-wide cursor-pointer"
           >
             <span className="font-pricedown">STAVYA</span>
-            <span className="text-base text-secondary ml-2">2025</span>
+            <span className="text-base text-secondary ml-2">2026</span>
           </a>
 
           {/* Desktop Navigation */}
