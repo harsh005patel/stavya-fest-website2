@@ -41,7 +41,7 @@ const coreTeam = [
     linkedin: "www.linkedin.com/in/vrut-ajudiya-bb40ba31a/",
   },
   { name: "Rishi Menpara", title: "Member Cultural", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: "www.linkedin.com/in/rishimenpara" },
-  { name: "Dev Patel", title: "Member", image: ["/contact_us/dev.jpg"], insta: "devunderscore23", linkedin: "https://www.linkedin.com/in/dev-patel-96b2a9217/" },  { name: "Chinmay Patil", title: "Member Cultural", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.jpg"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
+  { name: "Dev Patel", title: "Member Cultural", image: ["/contact_us/dev.jpg"], insta: "devunderscore23", linkedin: "https://www.linkedin.com/in/dev-patel-96b2a9217/" },  { name: "Chinmay Patil", title: "Member Cultural", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.jpg"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
   { name: "Devraj Singh", title: "Member Academics", image: ["/contact_us/devraj.jpg"], insta: "devraj._.x", linkedin: "www.linkedin.com/in/devrajsingh25" },
   { name: "Pankhuri Kushwaha", title: "Member Cultural", image: ["/contact_us/pankhuri.jpg"], insta: "pankhuri.dc", linkedin: "https://www.linkedin.com/in/pankhuri-kushwaha-b00186330" },
   { name: "Sajjala Anshu Reddy", title: "Member Cultural", image: ["/contact_us/anshu.jpg", "/contact_us/anshu.jpg"], insta: "anshu_reddyy19", linkedin: "linkedin.com/anshu-reddy" },
