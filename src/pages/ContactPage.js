@@ -69,7 +69,7 @@ const coordinators = [
   { name: "Rudraksha Singh", title: "Joint Secretary Uktam", image: ["/contact_us/rudraksh.jpg", "/contact_us/rudraksh.png"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
   { name: "Saumya Joshi", title: "Secretary Uktam", image: ["/contact_us/saumya.jpg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary Capture", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
-  { name: "Akarshhan Kumar", title: "Joint Secretary Capture", image: [""], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
+  { name: "Akarshhan Kumar", title: "Secretary Capture", image: ["/contact_us/akarshhan.jpg"], insta: "thatkrishhkumar", linkedin: "www.linkedin.com/in/akarshhan-kumar-5b8a7a287" },
   { name: "Mrunal Nikam", title: "Secretary Genesis", image: ["/contact_us/mrunal.jpg"], insta: "mrunal17nikam", linkedin: "www.linkedin.com/in/mrunal-nikam-20465628a" },
   { name: "Shubham Chhatbar", title: "Joint Secretary Genesis", image: ["/contact_us/shubham2.png"], insta: "7thdimensionartss", linkedin: "www.linkedin.com/in/shubhchhatbar27" },
 ];
