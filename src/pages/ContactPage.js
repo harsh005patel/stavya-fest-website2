@@ -103,14 +103,14 @@ const volunteers = [
   {
     name: "Astitva Vikrant",
     title: "Member Vector",
-    image: ["/contact_us/Astitva.jpg"],
+    image: ["/contact_us/astitva.jpg"],
     insta: "astitvavikrant",
     linkedin: "www.linkedin.com/in/astitvavikrant",
   },
   {
     name: "Abhiraj Solanki",
     title: "Member Vector",
-    image: ["/contact_us/Abhiraj.jpg"],
+    image: ["/contact_us/abhiraj.jpg"],
     insta: "_sarkar0f_solanki_707",
     linkedin: " www.linkedin.com/in/abhiraj-solanki-9994ba36b",
   },
