@@ -131,7 +131,7 @@ const events = [
     dancer: "/card_elements/7.png",
     registrationLink: "https://forms.gle/YKnrkFMVSHKHpag18",
     description:
-      "Emotions Unplugged is a spontaneous team-based drama event where participants perform short theatrical acts based on randomly assigned emotions and situations, testing creativity, emotional expression, and teamwork.",
+      "Emotions Unplugged invites you to take the world’s most famous movie or series plots and give them a ridiculous, comical makeover.",
   },
 ];
 
