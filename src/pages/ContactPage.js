@@ -40,13 +40,13 @@ const coreTeam = [
     insta: "vrut__ajudiya.__",
     linkedin: "www.linkedin.com/in/vrut-ajudiya-bb40ba31a/",
   },
-  { name: "Rishi Menpara", title: "Member Cultural", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: null },
+  { name: "Rishi Menpara", title: "Member Cultural", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: "www.linkedin.com/in/rishimenpara" },
   { name: "Chinmay Patil", title: "Member Cultural", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.jpg"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
   { name: "Devraj Singh", title: "Member Academics", image: ["/contact_us/devraj.jpg"], insta: "devraj._.x", linkedin: "www.linkedin.com/in/devrajsingh25" },
-  { name: "Yug Baid", title: "Member Cultural", image: ["/contact_us/yug.jpg"], insta: "yug__jaiin__", linkedin: null },
-  { name: "Pankhuri Kushwaha", title: "Member Cultural", image: ["/contact_us/pankhuri.jpg"], insta: "pankhuri.dc", linkedin: null },
+  { name: "Pankhuri Kushwaha", title: "Member Cultural", image: ["/contact_us/pankhuri.jpg"], insta: "pankhuri.dc", linkedin: "https://www.linkedin.com/in/pankhuri-kushwaha-b00186330" },
   { name: "Sajjala Anshu Reddy", title: "Member Cultural", image: ["/contact_us/anshu.jpg", "/contact_us/anshu.jpg"], insta: "anshu_reddyy19", linkedin: "linkedin.com/anshu-reddy" },
-  { name: "Kavya Siddh Sharma", title: "Member Cultural", image: ["/contact_us/kavya.jpg"], insta: "kavya._.1806", linkedin: "in.linkedin.com/in/kavya-siddh-sharma-714228318" },
+  { name: "Yug Baid", title: "Member Cultural", image: ["/contact_us/yug.jpg"], insta: "yug__jaiin__", linkedin: "https://www.linkedin.com/in/yug-baid-89702b309" },
+  { name: "Kavya Siddh Sharma", title: "Member Cultural", image: ["/contact_us/kavya.jpg"], insta: "kavya._.1806", linkedin: "www.linkedin.com/in/kavya-siddh-sharma-714228318" },
   { name: "Anushka Wagh", title: "Member Academics", image: ["/contact_us/anushka.jpg"], insta: "anushka_wagh_03", linkedin: "www.linkedin.com/in/anushka-wagh-0b0a7932b" },
   { name: "Ashitosh Shirsath", title: "Member Academics", image: ["/contact_us/ashitosh.jpg"], insta: "ashitosh_0302", linkedin: null },
   { name: "Lingampeta Daksha", title: "Member Academics", image: ["/contact_us/daksha.jpg", "/contact_us/daksha.jpeg"], insta: "daksha_goud.16", linkedin: "www.linkedin.com/in/lingampeta-daksha-548188330" },
@@ -71,7 +71,7 @@ const coordinators = [
   { name: "Harshil Patel", title: "Joint Secretary Capture", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Akarshhan Kumar", title: "Joint Secretary Capture", image: [""], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Mrunal Nikam", title: "Secretary Genesis", image: ["/contact_us/mrunal.jpg"], insta: "mrunal17nikam", linkedin: "www.linkedin.com/in/mrunal-nikam-20465628a" },
-  { name: "Shubham Chhatbar", title: "Joint Secretary Genesis", image: ["/contact_us/shubham.jpg"], insta: "7thdimensionartss", linkedin: "www.linkedin.com/in/shubhchhatbar27" },
+  { name: "Shubham Chhatbar", title: "Joint Secretary Genesis", image: ["/contact_us/shubham2.png"], insta: "7thdimensionartss", linkedin: "www.linkedin.com/in/shubhchhatbar27" },
 ];
 
 const Developer = [
