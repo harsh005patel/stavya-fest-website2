@@ -15,7 +15,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/1.jpg",
     dancer: "/card_elements/1.png",
-    registrationLink: "https://example.com/register/nrityakala",
+    registrationLink: "https://forms.gle/bK2PA8mi3NazrWYc8",
     description:
       "Nrityakala is a vibrant dance competition celebrating creativity, coordination, and expressive storytelling. Participants can perform solo or in groups, exploring diverse dance styles and original choreography in a high-energy showcase of talent.",
   },
@@ -25,13 +25,13 @@ const events = [
     category: "Art",
     venue: "IIITV-ICD Premises, Education Hub",
     teamOf: "3",
-    time: "2:00 PM feb 1",
+    time: "2:00 PM Jan 31",
     date: "01/02/2026",
     prizePool: "₹ 5,400",
     regDeadline: "30 JAN",
     image: "/cards/12.jpg",
     dancer: "/card_elements/12.png",
-    registrationLink: "https://example.com/register/rangoli-clash",
+    registrationLink: "https://forms.gle/W9mz2vtKiKFPhrT18",
     description:
       "Rangoli Clash celebrates traditional Rangoli art with a creative twist. Participants design vibrant Rangoli patterns based on surprise themes revealed on the spot, blending tradition with innovation under time constraints.",
   },
@@ -48,7 +48,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/11.jpg",
     dancer: "/card_elements/11.png",
-    registrationLink: "https://example.com/register/urban-harmony",
+    registrationLink: "https://forms.gle/QJcTXhi2fBH8oNAU6",
     description:
       "Urban Harmony is a group singing competition that celebrates collaboration and musical unity. Teams perform Indian or fusion music, blending vocals with instruments to create soulful and harmonious performances.",
   },
@@ -65,7 +65,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/9.jpg",
     dancer: "/card_elements/8.png",
-    registrationLink: "https://example.com/register/confero",
+    registrationLink: "https://forms.gle/qJijtiFnyoMpn8FA9",
     description:
       "Confero is a two-round debate competition for debate enthusiasts of IIITV-ICD. Teams compete through preliminary and final rounds, showcasing logical reasoning, articulation, and critical thinking.",
   },
@@ -81,7 +81,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/3.jpg",
     dancer: "/card_elements/3.png",
-    registrationLink: "https://example.com/register/shabd-sangam",
+    registrationLink: "https://forms.gle/Zo81gB9isA2qaczd8",
     description:
       "Shabd Sangam is a creative poetry challenge where teams craft original poems using randomly assigned words within a limited time. The event celebrates imagination, vocabulary, and expressive recitation.",
   },
@@ -113,7 +113,7 @@ const events = [
     regDeadline: "2 FEB",
     image: "/cards/5.jpg",
     dancer: "/card_elements/5.png",
-    registrationLink: "https://example.com/register/urban-lens",
+    registrationLink: "https://forms.gle/PpR3aV7SnA84n8Vk7",
     description:
       "Urban Lens is a photography competition themed Best Click – Capturing the Spirit of Stavya 2026. Participants submit original photographs that creatively capture the essence of the fest.",
   },
@@ -129,7 +129,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/7.jpg",
     dancer: "/card_elements/7.png",
-    registrationLink: "https://example.com/register/emotions-unplugged",
+    registrationLink: "https://forms.gle/YKnrkFMVSHKHpag18",
     description:
       "Emotions Unplugged is a spontaneous team-based drama event where participants perform short theatrical acts based on randomly assigned emotions and situations, testing creativity, emotional expression, and teamwork.",
   },

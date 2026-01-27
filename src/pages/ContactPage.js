@@ -69,6 +69,7 @@ const coordinators = [
   { name: "Rudraksha Singh", title: "Joint Secretary Uktam", image: ["/contact_us/rudraksh.jpg", "/contact_us/rudraksh.png"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
   { name: "Saumya Joshi", title: "Secretary Uktam", image: ["/contact_us/saumya.jpg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary Capture", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
+  { name: "Akarshhan Kumar", title: "Joint Secretary Capture", image: [""], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Mrunal Nikam", title: "Secretary Genesis", image: ["/contact_us/mrunal.jpg"], insta: "mrunal17nikam", linkedin: "www.linkedin.com/in/mrunal-nikam-20465628a" },
   { name: "Shubham Chhatbar", title: "Joint Secretary Genesis", image: ["/contact_us/shubham.jpg"], insta: "7thdimensionartss", linkedin: "www.linkedin.com/in/shubhchhatbar27" },
 ];
@@ -226,7 +227,16 @@ const Section = ({ title, bg, people, border, bar, icon }) => (
       {/* Use flexbox for better centering with odd number of cards */}
       <div className="container mx-auto flex flex-wrap justify-center gap-6 md:gap-8 px-4 md:px-0">
         {people.map((person) => (
-          <div key={person.name} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[300px]">
+          <div
+          key={person.name}
+          className="
+            w-full
+            sm:w-[calc(50%-16px)]
+            lg:w-1/3
+            max-w-[420px]
+          "
+        >
+        
             <ContactCard
               person={person}
               borderColor={border}
