@@ -27,13 +27,19 @@ const resolveLinkedIn = (link) => {
 
 /* 🔹 CORE TEAM */
 const coreTeam = [
-  { name: "Akshay Tapraniya", title: "President SAC", image: ["/contact_us/akshay.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/akshay-kumar-tapraniya-9a6457364" },
+  { name: "Akshay Tapraniya", title: "President SAC", image: ["/contact_us/akshay.jpg"], insta: "akshay._.why", linkedin: "linkedin.com/in/akshay-kumar-tapraniya-9a6457364" },
   { name: "Harsh Kukadiya", title: "Gen Sec Cultural", image: ["/contact_us/harsh.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
-  { name: "Anurag Daf", title: "Gen Sec Academics", image: ["/contact_us/anurag.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/anurag-daf-ad14" },
+  { name: "Anurag Daf", title: "Gen Sec Academics", image: ["/contact_us/anurag.jpg"], insta: "harsh_kukadiya_05", linkedin: "linkedin.com/in/anurag-daf-ad14" },
 
   { name: "Kshitiz Gangwar", title: "Member Cultural", image: ["/contact_us/kshitiz.jpeg"], insta: "_kshitiz08", linkedin: "www.linkedin.com/in/kshitiz-gangwar-aa3744280" },
   { name: "Abhi Virani", title: "Member Cultural", image: ["/contact_us/abhi.heic", "/contact_us/abhi.jpg"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
-
+  {
+    name: "Vrut Ajudiya",
+    title: "Member Cultural",
+    image: ["https://drive.google.com/uc?id=1sRAKCLBX1g-tdufMFGSHvFCZ5rCGIFqs"],
+    insta: "vrut__ajudiya.__",
+    linkedin: null,
+  },
   { name: "Rishi Menpara", title: "Member Cultural", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: null },
   { name: "Chinmay Patil", title: "Member Cultural", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.png"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
   { name: "Devraj Singh", title: "Member Academics", image: ["/contact_us/devraj.jpg"], insta: "devraj._.x", linkedin: "www.linkedin.com/in/devrajsingh25" },
@@ -54,7 +60,7 @@ const coreTeam = [
 const coordinators = [
   { name: "Poojan Simariya", title: "Secretary Eloquence", image: ["/contact_us/poojan.jpg"], insta: "poojansimariya", linkedin: "www.linkedin.com/in/poojan-simariya-ps5344" },
   { name: "Rishi Vykunta", title: "Joint Secretary Eloquence", image: ["/contact_us/rishi2.jpeg"], insta: "rish_i__x", linkedin: "www.linkedin.com/in/rishi-vykunta-1154a932b" },
-  { name: "Shailendra Singh Mandal", title: "Secretary Essence", image: ["/contact_us/shailendra.jpeg"], insta: "shailendra_.x", linkedin: "www.linkedin.com/in/shailendrasinghmandal" },
+  { name: "Shailendra Mandal", title: "Secretary Essence", image: ["/contact_us/shailendra.jpeg"], insta: "shailendra_.x", linkedin: "www.linkedin.com/in/shailendrasinghmandal" },
   { name: "Namra Koyani", title: "Joint Secretary Essence", image: ["/contact_us/namra.jpg"], insta: "namrakoyani", linkedin: "www.linkedin.com/in/namrakumar-koyani-24b6912a3" },
   { name: "Saransh Naik", title: "Secretary Beats", image: ["/contact_us/saransh.jpg"], insta: "saranshh0_0", linkedin: "www.linkedin.com/in/saranshnaik14" },
   { name: "Chirag Wattamwar", title: "Joint Secretary Beats", image: ["/contact_us/chirag.jpg"], insta: "chirag_gg234", linkedin: "www.linkedin.com/in/chirag-wattamwar-5b985a313" },
@@ -64,9 +70,52 @@ const coordinators = [
   { name: "Saumya Joshi", title: "Secretary Uktam", image: ["/contact_us/saumya.jpeg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary Capture", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Mrunal Nikam", title: "Secretary Genesis", image: ["/contact_us/mrunal.jpg"], insta: "mrunal17nikam", linkedin: "www.linkedin.com/in/mrunal-nikam-20465628a" },
+  { name: "Shubham Chhatbar", title: "Joint Secretary Genesis", image: ["/contact_us/shubham.jpg"], insta: "7thdimensionartss", linkedin: "www.linkedin.com/in/shubhchhatbar27" },
 ];
 
-/* ===================== CARD ===================== */
+const Developer = [
+  { name: "Harsh Kukadiya", title: "Secretary Vector", image: ["/contact_us/harsh.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
+];
+
+const volunteers = [
+  {
+    name: "Ritvik Srivastava",
+    title: "Member Vector",
+    image: ["ritvik.png"],
+    insta: "ritvik_.69",
+    linkedin: "www.linkedin.com/in/ritvik-srivastava-27891a376",
+  },
+  {
+    name: "Shivang Raj",
+    title: "Member Vector",
+    image: ["/shivang.png"],
+    insta: "___.shivang",
+    linkedin: "www.linkedin.com/in/shivang-raj-449534365",
+  },
+  {
+    name: "Tanmoy Sarkar",
+    title: "Member Vector",
+    image: ["/tanmoy.png"],
+    insta: "selfed_tazy",
+    linkedin: "www.linkedin.com/in/tanmoy-sarkar-a15a40394",
+  },
+  {
+    name: "Astitva Vikrant",
+    title: "Member Vector",
+    image: ["/Astitva.png"],
+    insta: "astitvavikrant",
+    linkedin: "www.linkedin.com/in/astitvavikrant",
+  },
+  {
+    name: "Abhiraj Solanki",
+    title: "Member Vector",
+    image: ["/Abhiraj.png"],
+    insta: "_sarkar0f_solanki_707",
+    linkedin: null,
+  },
+];
+
+/* ==================== CARD ===================== */
 
 const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
   const instagram = resolveInstagram(person.insta);
@@ -82,7 +131,8 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
     >
       <Card className={`w-full max-w-[300px] bg-black border-[3px] ${borderColor} rounded-none overflow-hidden group`}>
         <CardContent className="p-0 flex flex-col">
-          <div className={`w-full h-[300px] relative overflow-hidden bg-zinc-900 border-b-[3px] ${borderColor}`}>
+          {/* REDUCED HEIGHT FOR MOBILE */}
+          <div className={`w-full h-[270px] md:h-[300px] relative overflow-hidden bg-zinc-900 border-b-[3px] ${borderColor}`}>
             <motion.img
               src={person.image[0]}
               alt={person.name}
@@ -102,19 +152,17 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
               md:grayscale
               md:group-hover:grayscale-0
             "
-
             />
 
-<div
-  className="
-    absolute top-4 right-4 flex flex-col gap-3
-    translate-x-0
-    md:translate-x-12
-    md:group-hover:translate-x-0
-    transition-transform
-  "
->
-
+            <div
+              className="
+                absolute top-4 right-4 flex flex-col gap-3
+                translate-x-0
+                md:translate-x-12
+                md:group-hover:translate-x-0
+                transition-transform
+              "
+            >
               {instagram && (
                 <a className={`bg-white text-black p-2 border-2 border-black ${iconColor}`} href={instagram} target="_blank" rel="noreferrer">
                   <Instagram size={18} />
@@ -128,12 +176,13 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
             </div>
           </div>
 
-          <div className="p-5 bg-black text-white h-[110px] flex flex-col justify-between">
+          <div className="p-4 md:p-5 bg-black text-white h-[90px] md:h-[110px] flex flex-col justify-between">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold uppercase font-pricedown">{person.name}</h3>
-              <p className="text-xs text-zinc-400 uppercase mt-2">{person.title}</p>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold uppercase font-pricedown">{person.name}</h3>
+              <p className="text-xs text-zinc-400 uppercase mt-1 md:mt-2">{person.title}</p>
             </div>
-            <div className="w-full h-1 bg-zinc-800 overflow-hidden">
+            {/* HIDDEN ON MOBILE, SHOWN ON DESKTOP */}
+            <div className="hidden md:block w-full h-1 bg-zinc-800 overflow-hidden">
               <div className={`h-full ${barColor} w-0 group-hover:w-full transition-all duration-700`} />
             </div>
           </div>
@@ -146,36 +195,74 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
 /* ===================== SECTION + PAGE ===================== */
 
 const Section = ({ title, bg, people, border, bar, icon }) => (
-  <section className={`w-full ${bg}  pb-16`}>
-   <h2 className="text-center py-10 text-5xl font-black uppercase font-pricedown  text-black">
-  {title}
-</h2>
+  <section 
+    className={`w-full py-8 md:py-16 bg-fixed bg-cover bg-center relative`}
+    style={{
+      backgroundImage: 'linear-gradient(rgba(0, 32, 50, 0.4), rgba(0, 30, 39, 0.3)), url("/ROAD2.jpg")'
+    }}
+  >
+    <div className="absolute inset-0 bg-black/40"></div>
+    
+    <div className="relative z-10 px-4 md:px-0">
+      <h2 className="text-center py-6 md:py-10 text-4xl md:text-5xl font-black uppercase font-pricedown text-white">
+        {title}
+      </h2>
 
-    <div className="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
-      {people.map((person) => (
-        <ContactCard
-          key={person.name}
-          person={person}
-          borderColor={border}
-          barColor={bar}
-          iconColor={icon}
-        />
-      ))}
+      {/* Use flexbox for better centering with odd number of cards */}
+      <div className="container mx-auto flex flex-wrap justify-center gap-6 md:gap-8 px-4 md:px-0">
+        {people.map((person) => (
+          <div key={person.name} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[300px]">
+            <ContactCard
+              person={person}
+              borderColor={border}
+              barColor={bar}
+              iconColor={icon}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 );
 
-
 const ContactPage = () => (
   <div className="min-h-screen bg-black">
     <Navbar />
-    <div className="h-20 " />
+    <div className="h-20" />
 
-    <Section title="Core Team" bg="bg-[#7c3aed]" people={coreTeam} border="border-cyan-400" bar="bg-cyan-400" icon="hover:bg-cyan-400" />
-    <Section title="Coordinators" bg="bg-[#e5c07b]" people={coordinators} border="border-black" bar="bg-black" icon="hover:bg-[#e5c07b]" />
+    <Section 
+      title="Core Team" 
+      people={coreTeam} 
+      border="border-[#8b5cf6]"   // Medium purple
+      bar="bg-[#a78bfa]"          // Light purple
+      icon="hover:bg-[#c4b5fd]"   // Lightest purple
+    />
 
+    <Section 
+      title="Coordinators" 
+      people={coordinators} 
+      border="border-[#d97706]"   // Medium amber
+      bar="bg-[#f59e0b]"          // Light amber
+      icon="hover:bg-[#fbbf24]"   // Lightest amber
+    />
+
+    <Section 
+      title="Developer" 
+      people={Developer} 
+      border="border-[#3a9e7d]"   // Medium teal
+      bar="bg-[#48b28f]"          // Light teal
+      icon="hover:bg-[#56d0a9]"   // Lightest teal
+    />
+
+    <Section
+      title="DESIGN TEAM"
+      people={volunteers}
+      border="border-[#0e7490]"   // Medium cyan
+      bar="bg-[#0891b2]"          // Light cyan
+      icon="hover:bg-[#06b6d4]"   // Lightest cyan
+    />
+    
     <Footer />
   </div>
 );
-
 export default ContactPage;

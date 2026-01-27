@@ -242,7 +242,7 @@
     background:
       linear-gradient(#0f172a 0 0) content-box, /* dark slate main pill */
       linear-gradient(var(--c) 0 0) padding-box,
-      linear-gradient(var(--d), #0000 50%, #1e293b 0%) border-box; /* purple spine */
+      linear-gradient(var(--d), #0000 50%, #6d28d9 0%) border-box; /* purple spine */
     color: #a5f3fc; /* cyan text */
   }
 

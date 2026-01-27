@@ -1,74 +1,89 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-export const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [followerPosition, setFollowerPosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
+const EASE = 0.12;
+const HOVER_SELECTORS = 'a, button, [role="button"], [data-cursor-hover]';
+
+function useMousePosition() {
+  const pos = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    const onMove = (e) => {
+      pos.current.x = e.clientX;
+      pos.current.y = e.clientY;
     };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    return () => window.removeEventListener('mousemove', onMove);
+  }, []);
 
-    const handleMouseOver = (e) => {
-      const target = e.target ;
+  return pos;
+}
 
-      if (
-        !target
-      ) return;
+function useHovering() {
+  const [hovering, setHovering] = useState(false);
 
-      if (
-        target.tagName === 'BUTTON' ||
-        target.tagName === 'A' ||
-        target.closest('button') ||
-        target.closest('a')
-      ) {
-        setIsHovering(true);
-      } else {
-        setIsHovering(false);
-      }
+  useEffect(() => {
+    const onOver = (e) => {
+      setHovering(e.target?.closest(HOVER_SELECTORS) ?? false);
     };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseover', handleMouseOver);
-
+    const onOut = () => setHovering(false);
+    document.addEventListener('mouseover', onOver);
+    document.addEventListener('mouseout', onOut);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mouseover', onOver);
+      document.removeEventListener('mouseout', onOut);
     };
   }, []);
 
-  // Smooth follower – no timeout, just easing towards the main cursor
-  useEffect(() => {
-    const ease = 0.18; // 0–1 → closer to 1 = tighter to cursor
+  return hovering;
+}
 
-    setFollowerPosition((prev) => ({
-      x: prev.x + (position.x - prev.x) * ease,
-      y: prev.y + (position.y - prev.y) * ease,
-    }));
-  }, [position]);
+export const CustomCursor = () => {
+  const mouseRef = useMousePosition();
+  const isHovering = useHovering();
+  const dotRef = useRef(null);
+  const ringRef = useRef(null);
+  const ringPos = useRef({ x: 0, y: 0 });
+  const rafRef = useRef(null);
+
+  useEffect(() => {
+    if (!dotRef.current || !ringRef.current) return;
+
+    ringPos.current = { x: mouseRef.current.x, y: mouseRef.current.y };
+
+    const tick = () => {
+      const { x: mx, y: my } = mouseRef.current;
+      const rx = ringPos.current.x + (mx - ringPos.current.x) * EASE;
+      const ry = ringPos.current.y + (my - ringPos.current.y) * EASE;
+      ringPos.current = { x: rx, y: ry };
+
+      dotRef.current.style.transform = `translate(-50%, -50%) scale(${isHovering ? 1.4 : 1})`;
+      dotRef.current.style.backgroundColor = isHovering ? 'hsl(var(--primary))' : '';
+      dotRef.current.style.left = `${mx}px`;
+      dotRef.current.style.top = `${my}px`;
+
+      ringRef.current.style.left = `${rx}px`;
+      ringRef.current.style.top = `${ry}px`;
+
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [isHovering, mouseRef]);
 
   return (
     <>
-      {/* Main dot */}
       <div
-        className="custom-cursor pointer-events-none hidden md:block fixed z-[9999]"
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          transform: `translate(-50%, -50%) scale(${isHovering ? 1.5 : 1})`,
-          backgroundColor: isHovering ? 'hsl(var(--primary))' : 'transparent',
-        }}
+        ref={dotRef}
+        className="custom-cursor-dot pointer-events-none hidden md:block fixed z-[9999]"
+        aria-hidden
       />
-
-      {/* Soft trailing ring */}
       <div
-        className="cursor-follower pointer-events-none hidden md:block fixed z-[9998]"
-        style={{
-          left: `${followerPosition.x}px`,
-          top: `${followerPosition.y}px`,
-          transform: 'translate(-50%, -50%)',
-        }}
+        ref={ringRef}
+        className="custom-cursor-ring pointer-events-none hidden md:block fixed z-[9998]"
+        aria-hidden
       />
     </>
   );

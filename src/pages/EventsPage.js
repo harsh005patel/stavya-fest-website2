@@ -9,7 +9,7 @@ const events = [
     category: "Dance",
     venue: "IIITV-ICD Event Ground, Education Hub",
     teamOf: "1–5",
-    time: "9:00 PM",
+    time: "9:00 PM Jan 31",
     date: "31/01/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
@@ -24,9 +24,9 @@ const events = [
     title: "RANGOLI CLASH",
     category: "Art",
     venue: "IIITV-ICD Premises, Education Hub",
-    teamOf: "Individual / Team",
-    time: "2:00 PM",
-    date: "31/01/2026",
+    teamOf: "3",
+    time: "2:00 PM feb 1",
+    date: "01/02/2026",
     prizePool: "₹ 5,400",
     regDeadline: "30 JAN",
     image: "/cards/12.png",
@@ -41,8 +41,8 @@ const events = [
     subtitle: "Rhythms in Unity",
     category: "Music",
     venue: "Event Ground",
-    teamOf: "2–5",
-    time: "8:00 PM",
+    teamOf: "1–5",
+    time: "8:00 PM Feb 1",
     date: "01/02/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
@@ -58,8 +58,8 @@ const events = [
     subtitle: "Debate Competition",
     category: "Debate",
     venue: "Event Ground",
-    teamOf: "Team",
-    time: "10:00 AM",
+    teamOf: "2",
+    time: "10:00 AM feb 1",
     date: "01/02/2026",
     prizePool: "₹ 5,600",
     regDeadline: "30 JAN",
@@ -74,8 +74,8 @@ const events = [
     title: "SHABD SANGAM",
     category: "Poetry",
     venue: "Event Ground",
-    teamOf: 3,
-    time: "5:30 PM",
+    teamOf: "3",
+    time: "5:30 PM feb 1",
     date: "01/02/2026",
     prizePool: "₹ 8,400",
     regDeadline: "30 JAN",
@@ -88,10 +88,10 @@ const events = [
 
   {
     title: "SQUID SHOWDOWN",
-    category: "Game",
+    category: "Game Jan 31",
     venue: "IIITV-ICD Premises, Education Hub",
     teamOf: "Individual",
-    time: "8:30 AM",
+    time: "8:30 AM JAN 31",
     date: "31/01/2026",
     prizePool: "TBD",
     regDeadline: "30 JAN",
@@ -115,15 +115,15 @@ const events = [
     dancer: "/card_elements/5.png",
     registrationLink: "https://example.com/register/urban-lens",
     description:
-      "Urban Lens is a photography competition themed “Best Click – Capturing the Spirit of Stavya 2026”. Participants submit original photographs that creatively capture the essence of the fest.",
+      "Urban Lens is a photography competition themed Best Click – Capturing the Spirit of Stavya 2026. Participants submit original photographs that creatively capture the essence of the fest.",
   },
 
   {
     title: "EMOTIONS UNPLUGGED",
     category: "Drama",
     venue: "Event Ground, IIITV-ICD",
-    teamOf: 6,
-    time: "10:30 AM",
+    teamOf: "6",
+    time: "10:30 AM jan 31",
     date: "31/01/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
@@ -207,6 +207,7 @@ export const EventsPage = () => {
             {events.map((event, index) => {
               const isEven = index % 2 === 0;
               const isFlipped = !isEven;
+              const isLastCard = index === events.length - 1; // Check if it's the last card
               
               return (
                 <div key={index} className={`relative w-full aspect-auto md:aspect-[16/7] xl:aspect-[16/6] transition-all duration-1000 ease-out mb-20 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
@@ -220,17 +221,12 @@ export const EventsPage = () => {
 
                     <div className={`relative z-10 h-full flex flex-col justify-center items-${isFlipped ? 'end' : 'start'} p-16 xl:p-24 md:max-w-[65%] ${isFlipped ? 'md:ml-auto md:mr-0' : 'md:mr-auto md:ml-0'}`}>
                     <h2
-  className={`text-yellow-400 font-black uppercase tracking-tight leading-[0.9]
-    whitespace-nowrap
-    ${
-      index === events.length - 1
-        ? "md:text-[4.8rem] lg:text-[5.5rem] max-w-[90%]"
-        : "md:text-[6rem] lg:text-[7rem]"
-    }
-  `}
->
-  {event.title}
-</h2>
+                      className={`text-yellow-400 font-black uppercase tracking-tight leading-[0.9]
+                        ${isLastCard ? "whitespace-normal md:text-[4.5rem] lg:text-[5rem] max-w-[90%]" : "whitespace-nowrap md:text-[6rem] lg:text-[7rem]"}
+                      `}
+                    >
+                      {event.title}
+                    </h2>
                         
                         {/* TAG ROW - DESKTOP */}
                         <div className="flex flex-wrap items-center gap-3 mt-4 text-sm uppercase tracking-wider text-white/90">
@@ -289,9 +285,9 @@ export const EventsPage = () => {
                     </div>
 
                     {/* DANCER (DESKTOP) - ALTERNATE POSITION */}
-                    <div className={`absolute bottom-0 ${isFlipped ? 'left-8 lg:left-16' : 'right-8 lg:right-16'} w-[45%] h-[115%] pointer-events-none items-end justify-end z-20 overflow-visible`} style={{ animation: "flowRight 4s ease-in-out infinite" }}>
+                    <div className={`absolute bottom-0 ${isFlipped ? 'left-8 lg:left-16' : 'right-8 lg:right-16'} w-[45%] ${isLastCard ? 'h-[105%]' : 'h-[115%]'} pointer-events-none items-end justify-end z-20 overflow-visible`} style={{ animation: "flowRight 4s ease-in-out infinite" }}>
                         <style>{`@keyframes flowRight { 0%, 100% { transform: translateX(0); } 50% { transform: translateY(0.5rem); } }`}</style>
-                        <img src={event.dancer} alt="Character" className={`object-contain object-bottom w-full h-full md:-translate-y-6 filter brightness-110 contrast-110 ${isFlipped ? 'scale-x-[-1]' : ''}`} />
+                        <img src={event.dancer} alt="Character" className={`object-contain object-bottom w-full h-full ${isLastCard ? 'md:-translate-y-2' : 'md:-translate-y-6'} filter brightness-110 contrast-110 ${isFlipped ? 'scale-x-[-1]' : ''}`} />
                     </div>
 
                     {/* REGISTER BUTTON (DESKTOP POSITION) - ALTERNATE */}

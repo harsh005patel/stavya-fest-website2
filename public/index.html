@@ -20,6 +20,10 @@
                 font-weight: 900;
                 font-display: swap;
             }
+            /* Public assets: use CSS variables so webpack doesn't resolve paths in src */
+            :root {
+                --hero-bg: url("%PUBLIC_URL%/background.jpg");
+            }
         </style>
         <!--
       manifest.json provides metadata used when your web app is installed on a

@@ -5,29 +5,7 @@ export const Footer = () => {
   const currentYear = 2026;
   
   return (
-    <footer className="relative bg-gradient-to-b from-background via-background/95 to-card border-t border-primary/30 overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary rounded-full animate-pulse" style={{ animationDuration: '8s' }} />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary rounded-full animate-pulse" style={{ animationDuration: '10s', animationDelay: '1s' }} />
-      </div>
-
-      {/* Floating Particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-primary/30 rounded-full"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animation: `float ${3 + Math.random() * 4}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
-
+    <footer className="relative bg-[rgba(8,145,178,0.15)] border-t border-primary/30 overflow-hidden">
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header with Sparkles */}
@@ -143,79 +121,10 @@ export const Footer = () => {
                 </span>
                 <span className="text-sm">All Rights Reserved</span>
               </div>
-
-           
             </div>
           </div>
         </div>
       </div>
-
-      {/* Animated Gradient Border */}
-      <div className="relative h-1 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent" style={{
-          backgroundSize: '200% 200%',
-          animation: 'gradientX 3s ease infinite'
-        }} />
-      </div>
-
-      {/* Inline Style Tag with Keyframes */}
-      <style jsx global>{`
-        @keyframes gradientX {
-          0%, 100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-        }
-        
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0) translateX(0);
-          }
-          50% {
-            transform: translateY(-20px) translateX(10px);
-          }
-        }
-        
-        .backdrop-blur-sm {
-          backdrop-filter: blur(8px);
-        }
-        
-        /* Smooth scrolling for anchor links */
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
-
-      {/* Add CSS directly to style tag for animations */}
-      <style>{`
-        .group:hover .group-hover\\:translate-x-1 {
-          transform: translateX(4px);
-        }
-        
-        .hover\\:shadow-primary\\/10:hover {
-          box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(var(--primary) / 0.1);
-        }
-        
-        .bg-clip-text {
-          -webkit-background-clip: text;
-          background-clip: text;
-        }
-        
-        @keyframes pulse {
-          0%, 100% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.5;
-          }
-        }
-        
-        .animate-pulse {
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-      `}</style>
     </footer>
   );
 };
