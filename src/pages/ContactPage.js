@@ -28,8 +28,8 @@ const resolveLinkedIn = (link) => {
 /* 🔹 CORE TEAM */
 const coreTeam = [
   { name: "Akshay Tapraniya", title: "President SAC", image: ["/contact_us/akshay.jpg"], insta: "akshay._.why", linkedin: "linkedin.com/in/akshay-kumar-tapraniya-9a6457364" },
-  { name: "Harsh Kukadiya", title: "Gen Sec Cultural", image: ["/contact_us/harsh.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
-  { name: "Anurag Daf", title: "Gen Sec Academics", image: ["/contact_us/anurag.jpg"], insta: "harsh_kukadiya_05", linkedin: "linkedin.com/in/anurag-daf-ad14" },
+  { name: "Harsh Kukadiya", title: "Gen Sec Cultural", image: ["/contact_us/harsh.jpg"], insta: "harsh_kukadiya_05", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
+  { name: "Anurag Daf", title: "Gen Sec Academics", image: ["/contact_us/anurag.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/anurag-daf-ad14" },
 
   { name: "Kshitiz Gangwar", title: "Member Cultural", image: ["/contact_us/kshitiz.jpg"], insta: "_kshitiz08", linkedin: "www.linkedin.com/in/kshitiz-gangwar-aa3744280" },
   { name: "Abhi Virani", title: "Member Cultural", image: ["/contact_us/abhi.heic", "/contact_us/abhi.png"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
@@ -75,7 +75,7 @@ const coordinators = [
 ];
 
 const Developer = [
-  { name: "Harsh Kukadiya", title: "Secretary Vector", image: ["/contact_us/harsh.jpg"], insta: "anurag._.14", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
+  { name: "Harsh Kukadiya", title: "Secretary Vector", image: ["/contact_us/harsh.jpg"], insta: "harsh_kukadiya_05", linkedin: "linkedin.com/in/harsh-kukadiya-b229392a3" },
 ];
 
 const volunteers = [
