@@ -1,40 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import HeroScene from './HeroScene';
+import React from 'react';
 import MarioTimeline from './MarioTimeline';
 import './marioTimeline.css';
 
 export const Schedule = () => {
-  const [isDesktop, setIsDesktop] = useState(true);
-  const sectionRef = useRef(null);
-  const scrollProgress = useRef(0);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current || !isDesktop) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      // 🔹 ADJUSTMENT: We calculate progress over the FIRST part of the section only
-      // This ensures progress reaches 1.0 (Full Zoom) BEFORE the content arrives
-      const zoomTrackHeight = windowHeight * 2; // Matches the spacer below
-      const currentScroll = -rect.top;
-      const progress = Math.max(0, Math.min(1, currentScroll / zoomTrackHeight));
-      
-      scrollProgress.current = progress;
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isDesktop]);
-
   const schedule = [
     {
       day: 'Day 1',
@@ -55,41 +23,27 @@ export const Schedule = () => {
   ];
 
   return (
-    <section id="schedule" ref={sectionRef} className="relative">
-      
-      {/* 🔹 1. ZOOM TRACK */}
-      {isDesktop && (
-        <div className="relative h-[300vh]"> {/* Increased track height */}
-          <div className="sticky top-0 h-[100dvh] w-full flex items-center justify-center overflow-hidden z-10">
-            <HeroScene scrollProgress={scrollProgress} />
-          </div>
-        </div>
-      )}
-
-      {/* 🔹 2. CONTENT - Removed negative margin to ensure it starts AFTER the zoom finishes */}
-      <div className={`relative z-20 ${isDesktop ? 'mt-0' : ''}`}>
-        {/* Title Section with Purple Background */}
-        <div className="schedule-title-section">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-black font-pricedown">
-            <span>EVENT</span>{' '}
-            <span>SCHEDULE</span>
-          </h2>
-        </div>
-
-        {/* Timeline (Super Mario themed) - All events combined */}
-        <MarioTimeline
-          title="Super Mario Timeline"
-          subtitle="Initial launch dates of games in the Super Mario series."
-          items={schedule.flatMap((day) => 
-            day.events.map((e) => ({
-              time: e.time,
-              title: e.title,
-              location: e.location,
-            }))
-          )}
-        />
+    <section id="schedule" className="relative">
+      <div className="schedule-title-section">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-black font-pricedown">
+          <span>EVENT</span>{' '}
+          <span>SCHEDULE</span>
+        </h2>
       </div>
+
+      <MarioTimeline
+        title="Super Mario Timeline"
+        subtitle="Initial launch dates of games in the Super Mario series."
+        items={schedule.flatMap((day) =>
+          day.events.map((e) => ({
+            time: e.time,
+            title: e.title,
+            location: e.location,
+          }))
+        )}
+      />
     </section>
   );
 };
+
 export default Schedule;

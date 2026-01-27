@@ -13,7 +13,7 @@ const events = [
     date: "31/01/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
-    image: "/cards/1.png",
+    image: "/cards/1.jpg",
     dancer: "/card_elements/1.png",
     registrationLink: "https://example.com/register/nrityakala",
     description:
@@ -29,7 +29,7 @@ const events = [
     date: "01/02/2026",
     prizePool: "₹ 5,400",
     regDeadline: "30 JAN",
-    image: "/cards/12.png",
+    image: "/cards/12.jpg",
     dancer: "/card_elements/12.png",
     registrationLink: "https://example.com/register/rangoli-clash",
     description:
@@ -46,7 +46,7 @@ const events = [
     date: "01/02/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
-    image: "/cards/11.png",
+    image: "/cards/11.jpg",
     dancer: "/card_elements/11.png",
     registrationLink: "https://example.com/register/urban-harmony",
     description:
@@ -63,7 +63,7 @@ const events = [
     date: "01/02/2026",
     prizePool: "₹ 5,600",
     regDeadline: "30 JAN",
-    image: "/cards/9.png",
+    image: "/cards/9.jpg",
     dancer: "/card_elements/8.png",
     registrationLink: "https://example.com/register/confero",
     description:
@@ -79,7 +79,7 @@ const events = [
     date: "01/02/2026",
     prizePool: "₹ 8,400",
     regDeadline: "30 JAN",
-    image: "/cards/3.png",
+    image: "/cards/3.jpg",
     dancer: "/card_elements/3.png",
     registrationLink: "https://example.com/register/shabd-sangam",
     description:
@@ -95,7 +95,7 @@ const events = [
     date: "31/01/2026",
     prizePool: "TBD",
     regDeadline: "30 JAN",
-    image: "/cards/13.png",
+    image: "/cards/13.jpg",
     dancer: "/card_elements/13.png",
     registrationLink: "https://example.com/register/squid-showdown",
     description:
@@ -111,7 +111,7 @@ const events = [
     date: "31/01/2026",
     prizePool: "₹ 3,000",
     regDeadline: "2 FEB",
-    image: "/cards/5.png",
+    image: "/cards/5.jpg",
     dancer: "/card_elements/5.png",
     registrationLink: "https://example.com/register/urban-lens",
     description:
@@ -127,7 +127,7 @@ const events = [
     date: "31/01/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
-    image: "/cards/7.png",
+    image: "/cards/7.jpg",
     dancer: "/card_elements/7.png",
     registrationLink: "https://example.com/register/emotions-unplugged",
     description:

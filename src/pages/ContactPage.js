@@ -36,9 +36,9 @@ const coreTeam = [
   {
     name: "Vrut Ajudiya",
     title: "Member Cultural",
-    image: ["https://drive.google.com/uc?id=1sRAKCLBX1g-tdufMFGSHvFCZ5rCGIFqs"],
+    image: ["/contact_us/vrut.jpg"],
     insta: "vrut__ajudiya.__",
-    linkedin: null,
+    linkedin: "www.linkedin.com/in/vrut-ajudiya-bb40ba31a/",
   },
   { name: "Rishi Menpara", title: "Member Cultural", image: ["/contact_us/rishi.jpg"], insta: "rishi_menpara", linkedin: null },
   { name: "Chinmay Patil", title: "Member Cultural", image: ["/contact_us/chinmay.jpeg", "/contact_us/chinmay.jpg"], insta: "chinmay._.patil", linkedin: "www.linkedin.com/in/chinmay-patil-63318a330" },
@@ -64,9 +64,9 @@ const coordinators = [
   { name: "Namra Koyani", title: "Joint Secretary Essence", image: ["/contact_us/namra.jpg"], insta: "namrakoyani", linkedin: "www.linkedin.com/in/namrakumar-koyani-24b6912a3" },
   { name: "Saransh Naik", title: "Secretary Beats", image: ["/contact_us/saransh.jpg"], insta: "saranshh0_0", linkedin: "www.linkedin.com/in/saranshnaik14" },
   { name: "Chirag Wattamwar", title: "Joint Secretary Beats", image: ["/contact_us/chirag.jpg"], insta: "chirag_gg234", linkedin: "www.linkedin.com/in/chirag-wattamwar-5b985a313" },
-  { name: "Ankit Mishra", title: "Secretary Vehemence", image: ["/contact_us/ankit.png"], insta: "ankitmishra1597", linkedin: "www.linkedin.com/in/ankit-mishra-189b38277" },
+  { name: "Ankit Mishra", title: "Secretary Vehemence", image: ["/contact_us/ankit.jpg"], insta: "ankitmishra1597", linkedin: "www.linkedin.com/in/ankit-mishra-189b38277" },
   { name: "Shubhankar Verma", title: "Joint Secretary Vehemence", image: ["/contact_us/shubhankar.jpg"], insta: "shubhankar__3", linkedin: "linkedin.com/in/shubhankar-verma-2b8061313" },
-  { name: "Rudraksha Singh", title: "Joint Secretary Uktam", image: ["/contact_us/rudraksha.jpg", "/contact_us/rudraksh.png"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
+  { name: "Rudraksha Singh", title: "Joint Secretary Uktam", image: ["/contact_us/rudraksh.jpg", "/contact_us/rudraksh.png"], insta: null, linkedin: "www.linkedin.com/in/rudraksha-singh-a26373399" },
   { name: "Saumya Joshi", title: "Secretary Uktam", image: ["/contact_us/saumya.jpg"], insta: "saumya_joshi_8", linkedin: "www.linkedin.com/in/saumya-joshi-83778b28b" },
   { name: "Harshil Patel", title: "Joint Secretary Capture", image: ["/contact_us/harshil.jpg"], insta: "harshil_3105_", linkedin: "www.linkedin.com/in/harshil-patel-5a7373333" },
   { name: "Mrunal Nikam", title: "Secretary Genesis", image: ["/contact_us/mrunal.jpg"], insta: "mrunal17nikam", linkedin: "www.linkedin.com/in/mrunal-nikam-20465628a" },
@@ -81,37 +81,50 @@ const volunteers = [
   {
     name: "Ritvik Srivastava",
     title: "Member Vector",
-    image: ["ritvik.png"],
+    image: ["/contact_us/ritvik.jpg"],
     insta: "ritvik_.69",
     linkedin: "www.linkedin.com/in/ritvik-srivastava-27891a376",
   },
   {
     name: "Shivang Raj",
     title: "Member Vector",
-    image: ["/shivang.png"],
+    image: ["/contact_us/shivang.jpg"],
     insta: "___.shivang",
     linkedin: "www.linkedin.com/in/shivang-raj-449534365",
   },
   {
     name: "Tanmoy Sarkar",
     title: "Member Vector",
-    image: ["/tanmoy.png"],
+    image: ["/contact_us/tanmoy.jpg"],
     insta: "selfed_tazy",
     linkedin: "www.linkedin.com/in/tanmoy-sarkar-a15a40394",
   },
   {
     name: "Astitva Vikrant",
     title: "Member Vector",
-    image: ["/Astitva.png"],
+    image: ["/contact_us/Astitva.jpg"],
     insta: "astitvavikrant",
     linkedin: "www.linkedin.com/in/astitvavikrant",
   },
   {
     name: "Abhiraj Solanki",
     title: "Member Vector",
-    image: ["/Abhiraj.png"],
+    image: ["/contact_us/Abhiraj.jpg"],
     insta: "_sarkar0f_solanki_707",
-    linkedin: null,
+    linkedin: " www.linkedin.com/in/abhiraj-solanki-9994ba36b",
+  },
+  {
+    name: "Naman Girdhani",
+    title: "Member Vector",
+    image: ["/contact_us/naman.png"],
+    insta: "namangirdhani21",
+    linkedin: " www.linkedin.com/in/naman-girdhani-a609aa379?",
+  },{
+    name: "Pranav Borole",
+    title: "Member Vector",
+    image: ["/contact_us/pranav.png"],
+    insta: "pranav_borole_",
+    linkedin: " www.linkedin.com/in/pranav-borole-a2b19531b",
   },
 ];
 
@@ -129,7 +142,7 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
       transition={{ duration: 0.5 }}
       className="flex justify-center w-full"
     >
-      <Card className={`w-full max-w-[300px] bg-black border-[3px] ${borderColor} rounded-none overflow-hidden group`}>
+      <Card className={`w-full max-w-[320px] m-4 bg-black border-[3px] ${borderColor} rounded-none overflow-hidden group`}>
         <CardContent className="p-0 flex flex-col">
           {/* REDUCED HEIGHT FOR MOBILE */}
           <div className={`w-full h-[270px] md:h-[300px] relative overflow-hidden bg-zinc-900 border-b-[3px] ${borderColor}`}>

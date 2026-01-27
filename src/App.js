@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Events from './components/Events';
 import Schedule from './components/Schedule';
+import ScheduleWithHero3D from './components/ScheduleWithHero3D';
 import Gallery from './components/Gallery';
 import OrganizingClubs from './components/OrganizingClubs';
 import Footer from './components/Footer';
@@ -54,9 +55,31 @@ function HomePage() {
       <Navbar />
       <Hero />
       <About />
-      <Schedule />
+      <ScheduleWithHero3D />
       {/* <Gallery /> */}
       <OrganizingClubs />
+      <Footer />
+    </div>
+  );
+}
+
+function AboutPage() {
+  return (
+    <div className="App relative">
+      <CustomCursor />
+      <Navbar />
+      <About />
+      <Footer />
+    </div>
+  );
+}
+
+function SchedulePage() {
+  return (
+    <div className="App relative">
+      <CustomCursor />
+      <Navbar />
+      <Schedule />
       <Footer />
     </div>
   );
@@ -68,6 +91,8 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>

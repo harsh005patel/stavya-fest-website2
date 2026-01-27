@@ -7,9 +7,9 @@ export const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/', type: 'route' },
-    { name: 'About', href: '#about', type: 'section' },
+    { name: 'About', href: '/about', type: 'route' },
     { name: 'Events', href: '/events', type: 'route' },
-    { name: 'Schedule', href: '#schedule', type: 'section' },
+    { name: 'Schedule', href: '/schedule', type: 'route' },
     { name: 'Contact Us', href: '/contact', type: 'route' },
   ];
 

@@ -42,7 +42,7 @@ export const About = () => {
     {
       src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400',
       label: 'CROWD',
-      color: 'secondary',
+      color: 'primary',
       description: 'Solo, duo, group performances across multiple genres',
       category: 'Dance',
       icon: Users,
@@ -50,7 +50,7 @@ export const About = () => {
     {
       src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400',
       label: 'BACKSTAGE',
-      color: 'accent',
+      color: 'primary',
       description: 'Stage plays, street plays, mono-acting competitions',
       category: 'Drama & Theatre',
       icon: Drama,
@@ -66,7 +66,7 @@ export const About = () => {
     {
       src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400',
       label: 'ENERGY',
-      color: 'secondary',
+      color: 'primary',
       description: 'Live painting, digital art, photography exhibitions',
       category: 'Art & Design',
       icon: Palette,
@@ -74,7 +74,7 @@ export const About = () => {
     {
       src: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400',
       label: 'MEMORIES',
-      color: 'accent',
+      color: 'primary',
       description: 'Literary events, debates, quizzes, and more',
       category: 'Competitions',
       icon: Award,
@@ -88,10 +88,13 @@ export const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 font-pricedown">
             <span className="font-pricedown">ABOUT</span>{' '}
-            <span className="text-secondary font-pricedown">COLLEGE</span>
+            <span className="text-secondary font-pricedown">STAVYA</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Indian Institute of Information Technology Vadodara – International Campus Diu is a centrally funded technical institute under the Ministry of Education, Government of India. It focuses on high-quality education and research in Information Technology, offering programs like B.Tech and Ph.D., with strong emphasis on innovation, industry exposure, and practical learning.
+          Stavya, meaning “worthy of praise”, is the annual cultural festival of IIIT Vadodara–ICD.
+It provides a dynamic platform for students to showcase talents in performing and aesthetic arts.
+The fest celebrates creativity, collaboration, and cultural expression.
+Stavya 2026 marks its 4th edition, continuing a growing legacy of excellence.
           </p>
         </div>
 
@@ -119,8 +122,10 @@ export const About = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
 
-                  {/* Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-t from-${image.color} to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300`} />
+<div
+    className="absolute inset-0 pointer-events-none"
+    style={{ backgroundColor: "rgba(6, 75, 105, 0.45)" }}
+  ></div>
 
                   {/* Label */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
