@@ -143,7 +143,7 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
       transition={{ duration: 0.5 }}
       className="flex justify-center w-full"
     >
-      <Card className={`w-full max-w-[380px] m-4 bg-black border-[3px] ${borderColor} rounded-none overflow-hidden group`}>
+      <Card className={`w-full  max-w-[380px] m-4 bg-black border-[3px] ${borderColor} rounded-none overflow-hidden group`}>
         <CardContent className="p-0 flex flex-col">
           {/* REDUCED HEIGHT FOR MOBILE */}
           <div className={`w-full h-[270px] md:h-[300px] relative overflow-hidden bg-zinc-900 border-b-[3px] ${borderColor}`}>
