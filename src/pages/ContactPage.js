@@ -32,7 +32,7 @@ const coreTeam = [
   { name: "Anurag Daf", title: "Gen Sec Academics", image: ["/contact_us/anurag.jpg"], insta: "harsh_kukadiya_05", linkedin: "linkedin.com/in/anurag-daf-ad14" },
 
   { name: "Kshitiz Gangwar", title: "Member Cultural", image: ["/contact_us/kshitiz.jpg"], insta: "_kshitiz08", linkedin: "www.linkedin.com/in/kshitiz-gangwar-aa3744280" },
-  { name: "Abhi Virani", title: "Member Cultural", image: ["/contact_us/abhi.heic", "/contact_us/abhi.jpg"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
+  { name: "Abhi Virani", title: "Member Cultural", image: ["/contact_us/abhi.heic", "/contact_us/abhi.png"], insta: "abhivirani_007", linkedin: "www.linkedin.com/in/abhi-virani" },
   {
     name: "Vrut Ajudiya",
     title: "Member Cultural",
