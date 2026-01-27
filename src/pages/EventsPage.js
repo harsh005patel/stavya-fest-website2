@@ -212,8 +212,13 @@ export const EventsPage = () => {
               return (
                 <div key={index} className={`relative w-full aspect-auto md:aspect-[16/7] xl:aspect-[16/6] transition-all duration-1000 ease-out mb-20 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
                     <div className="absolute inset-0 md:rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-900 group">
-                        <img src={event.image} alt="Background" className="w-full h-full object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
-                         />
+                        <img
+                          src={event.image}
+                          alt="Background"
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
+                        />
                          <div className="absolute inset-0 bg-black/30 pointer-events-none" />
 
                       
@@ -287,7 +292,13 @@ export const EventsPage = () => {
                     {/* DANCER (DESKTOP) - ALTERNATE POSITION */}
                     <div className={`absolute bottom-0 ${isFlipped ? 'left-8 lg:left-16' : 'right-8 lg:right-16'} w-[45%] ${isLastCard ? 'h-[105%]' : 'h-[115%]'} pointer-events-none items-end justify-end z-20 overflow-visible`} style={{ animation: "flowRight 4s ease-in-out infinite" }}>
                         <style>{`@keyframes flowRight { 0%, 100% { transform: translateX(0); } 50% { transform: translateY(0.5rem); } }`}</style>
-                        <img src={event.dancer} alt="Character" className={`object-contain object-bottom w-full h-full ${isLastCard ? 'md:-translate-y-2' : 'md:-translate-y-6'} filter brightness-110 contrast-110 ${isFlipped ? 'scale-x-[-1]' : ''}`} />
+                        <img
+                          src={event.dancer}
+                          alt="Character"
+                          loading="lazy"
+                          decoding="async"
+                          className={`object-contain object-bottom w-full h-full ${isLastCard ? 'md:-translate-y-2' : 'md:-translate-y-6'} filter brightness-110 contrast-110 ${isFlipped ? 'scale-x-[-1]' : ''}`}
+                        />
                     </div>
 
                     {/* REGISTER BUTTON (DESKTOP POSITION) - ALTERNATE */}
@@ -317,6 +328,8 @@ export const EventsPage = () => {
                   <img
                     src={event.image}
                     alt={event.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
 

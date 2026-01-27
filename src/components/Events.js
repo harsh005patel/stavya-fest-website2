@@ -148,6 +148,8 @@ export const Events = () => {
                   <img
                     src={event.image}
                     alt={event.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <Badge className={`absolute top-4 right-4 bg-${event.color}`}>

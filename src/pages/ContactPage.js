@@ -149,6 +149,8 @@ const ContactCard = ({ person, borderColor, barColor, iconColor }) => {
             <motion.img
               src={person.image[0]}
               alt={person.name}
+              loading="lazy"
+              decoding="async"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.4 }}
               onError={(e) => {

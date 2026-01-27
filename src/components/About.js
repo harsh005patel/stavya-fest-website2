@@ -119,6 +119,8 @@ Stavya 2026 marks its 4th edition, continuing a growing legacy of excellence.
                   <img
                     src={image.src}
                     alt={image.label}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
 

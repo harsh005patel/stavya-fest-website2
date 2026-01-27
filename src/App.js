@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -10,8 +10,8 @@ import Gallery from './components/Gallery';
 import OrganizingClubs from './components/OrganizingClubs';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
-import EventsPage from './pages/EventsPage';
-import ContactPage from './pages/ContactPage';
+const EventsPage = lazy(() => import('./pages/EventsPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 // ScrollToTop component to scroll to top on route change
 function ScrollToTop() {
@@ -89,13 +89,21 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/schedule" element={<SchedulePage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
+      <Suspense
+        fallback={
+          <div className="fixed inset-0 flex items-center justify-center bg-background text-foreground z-50">
+            <span className="text-xl font-pricedown tracking-widest">Loading…</span>
+          </div>
+        }
+      >
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
