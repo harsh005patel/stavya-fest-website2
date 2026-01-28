@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Button } from './ui/button';
 import { ChevronDown, Sparkles, Calendar, MapPin } from 'lucide-react';
 
@@ -16,6 +16,10 @@ export const Hero = () => {
     return () => clearTimeout(timer);
   }, [showIntroVideo]);
 
+  const handleVideoClose = useCallback(() => {
+    setShowIntroVideo(false);
+  }, []);
+
   return (
     <section
       id="hero"
@@ -27,12 +31,12 @@ export const Hero = () => {
           absolute inset-0 -z-10 
           bg-cover bg-center bg-no-repeat bg-fixed
         "
-        style={{ backgroundImage: "url('/background.jpg')" }}
+        style={{ backgroundImage: "url('/background.jpg?width=1920')" }}
       >
         <div
-    className="absolute inset-0 pointer-events-none"
-    style={{ backgroundColor: "rgba(13, 68, 92, 0.45)" }}
-  ></div>
+          className="absolute inset-0 pointer-events-none"
+          style={{ backgroundColor: "rgba(13, 68, 92, 0.45)" }}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background z-10" />
       </div>
 
@@ -52,9 +56,11 @@ export const Hero = () => {
               src="/logo.svg"
               alt="STAVYA Festival Logo"
               className="h-36 sm:h-44 md:h-56 lg:h-72 xl:h-96 w-auto logo-glow-multi"
+              width="400"
+              height="300"
+              loading="eager"
+              fetchPriority="high"
             />
-
-
           </div>
 
           {/* Tagline */}
@@ -62,8 +68,6 @@ export const Hero = () => {
             Unleash the <span className="text-accent font-pricedown">Chaos</span> of{' '}
             <span className="text-primary font-pricedown">Creativity</span>
           </p>
-
-         
         </div>
       </div>
 
