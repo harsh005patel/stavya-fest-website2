@@ -97,7 +97,7 @@ const events = [
     regDeadline: "30 JAN",
     image: "/cards/13.jpg",
     dancer: "/card_elements/13.png",
-    registrationLink: "https://forms.gle/TVXqku8gVpd6vJgx7",
+    registrationLink: "https://forms.gle/9akgxoQ2ewiBuspa9",
     description:
       "Squid Showdown is a high-energy elimination-style event inspired by the Squid Game universe. Participants face a series of safe, fast-paced challenges testing reflexes, strategy, and nerve. Only the sharpest survive to claim victory.",
   },
