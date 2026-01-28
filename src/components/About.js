@@ -130,7 +130,7 @@ Stavya 2026 marks its 4th edition, continuing a growing legacy of excellence.
        {/* Stats */}
 <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20">
   {[
-    { number: '50+', label: 'Events' },
+    { number: '8+', label: 'Events' },
     { number: '500+', label: 'Participants' },
     { number: '₹40K+', label: 'Prize Money' },
   ].map((stat, index) => (
