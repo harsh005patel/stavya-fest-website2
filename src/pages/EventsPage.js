@@ -25,7 +25,7 @@ const events = [
     category: "Art",
     venue: "IIITV-ICD Premises, Education Hub",
     teamOf: "3",
-    time: "2:00 PM Jan 31",
+    time: "2:00 PM FEB 1",
     date: "01/02/2026",
     prizePool: "₹ 5,400",
     regDeadline: "30 JAN",
