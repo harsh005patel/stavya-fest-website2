@@ -31,30 +31,7 @@ export const About = () => {
   }, []);
 
   const images = [
-    {
-      src: 'https://images.unsplash.com/photo-1651178836409-4460d0e47bea?w=400',
-      label: 'LIVE',
-      color: 'primary',
-      description: 'Live performances, DJ nights, battle of the bands',
-      category: 'Music',
-      icon: Music,
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400',
-      label: 'CROWD',
-      color: 'primary',
-      description: 'Solo, duo, group performances across multiple genres',
-      category: 'Dance',
-      icon: Users,
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400',
-      label: 'BACKSTAGE',
-      color: 'primary',
-      description: 'Stage plays, street plays, mono-acting competitions',
-      category: 'Drama & Theatre',
-      icon: Drama,
-    },
+    
     {
       src: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400',
       label: 'VIBES',
