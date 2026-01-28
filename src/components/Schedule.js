@@ -27,7 +27,7 @@ export const Schedule = () => {
     
     <section
   id="schedule"
-  className="relative pt-10 sm:pt-16 md:pt-20"
+  className="relative pt-20 sm:pt-16 md:pt-20"
 >
       <div className="schedule-title-section">
         <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-black font-pricedown">
