@@ -123,7 +123,7 @@ const events = [
     category: "Drama",
     venue: "Event Ground, IIITV-ICD",
     teamOf: "6",
-    time: "10:30 AM jan 31",
+    time: "6:30 PM jan 31",
     date: "31/01/2026",
     prizePool: "₹ 5,700",
     regDeadline: "30 JAN",
