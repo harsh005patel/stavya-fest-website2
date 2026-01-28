@@ -114,20 +114,20 @@ const volunteers = [
     title: "Member Vector",
     image: ["/contact_us/abhiraj.jpg"],
     insta: "_sarkar0f_solanki_707",
-    linkedin: " www.linkedin.com/in/abhiraj-solanki-9994ba36b",
+    linkedin: "www.linkedin.com/in/abhiraj-solanki-9994ba36b",
   },
   {
     name: "Naman Girdhani",
     title: "Member Vector",
     image: ["/contact_us/naman.png"],
     insta: "namangirdhani21",
-    linkedin: " www.linkedin.com/in/naman-girdhani-a609aa379?",
+    linkedin: "www.linkedin.com/in/naman-girdhani-a609aa379",
   },{
     name: "Pranav Borole",
     title: "Member Vector",
     image: ["/contact_us/pranav.png"],
     insta: "pranav_borole_",
-    linkedin: " www.linkedin.com/in/pranav-borole-a2b19531b",
+    linkedin: "www.linkedin.com/in/pranav-borole-a2b19531b",
   },
 ];
 
